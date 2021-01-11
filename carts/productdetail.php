@@ -6,38 +6,13 @@ $resultsad = $conn->query($sqlsad);
 $mem = $resultsad ->fetch_assoc();
 ?>
     
-    <div class="product-big-title-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="product-bit-title text-center">
-                     <h2><marquee>รายละเอียดสินค้า</marquee></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+
     
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="single-sidebar">
-                        <h2 class="sidebar-title">สินค้าอื่นๆ</h2>
-                        <?php 
-                        while($row1 = mysqli_fetch_assoc($resultp)) { ?>
-                        <div class="thubmnail-recent">
-                            <img class="recent-thumb" src="/thenewcart/dbadmin/assets/img/product/<?php echo $row1['product_img_name']; ?>">
-                            <h2><a href="productdetail.php?catId=<?php echo $catId; ?>&itemId=<?php echo $row1['id']; ?>"><?php echo $row1['product_name']; ?></a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>ราคา <?php echo $row1['product_price']; ?> บาท.-</ins>
-                            </div>                   
-                        </div>
-                        <?php } ?> 
-                    </div>
-                </div>
+               
                 
                 <div class="col-md-8">
                     <div class="product-content-right">

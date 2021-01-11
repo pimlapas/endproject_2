@@ -7,17 +7,10 @@
     include '../config/head.php'
 ?>
 <body>
-<div class="product-big-title-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+
                     <div class="product-bit-title text-center">
-                        <h2><marquee>รายการสินค้า</marquee></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <h2>รายการสินค้า</h2>
+                  
 
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
@@ -39,13 +32,13 @@
                 <h4 class="card-title"><br><p style="color:black;">
                 <?php echo $row['product_name']; ?>
                 </h4></p>
-                <h5><span class="badge badge-secondary" style="background-color:yellow"><p style="color:black;">ราคา <?php echo number_format($row['product_price'],2); ?></p></span></h5>
-                <p class="card-text" style="color:black;"><?php echo mb_substr($row['product_desc'],0,75,'UTF-8'); ?></p>
+                <h5><span class="badge badge-secondary" style="background-color:yellow"><p style="color:black;">ราคา <?php echo number_format($row['product_price'],2); ?> บาท</p></span></h5>
+                <p class="card-text" style="color:black;"><b><u>รายละเอียดสินค้า</u></b> <br><?php echo mb_substr($row['product_desc'],0,75,'UTF-8'); ?></p>
                 <?php if($row['qty']<=0) : ?>
                 <p class="card-text"><span class="badge badge-secondary" style="background-color:red">สินค้าหมด</span></p>
                 <?php endif; ?> 
                 <?php if($row['qty']>=1) : ?>
-                <p class="card-text"><span class="badge badge-secondary" style="background-color:#000000">คงเหลือจำนวน <?php echo $row['qty']; ?></span></p>
+                <p class="card-text"><span class="badge badge-secondary" style="background-color:#000000">คงเหลือจำนวน <?php echo $row['qty']; ?> ชิ้น</span></p>
                 <?php endif; ?> 
                 <div class="col-m-6">
                 <?php if($row['qty']<=0) : ?>
@@ -55,7 +48,7 @@
 
                 <?php if($row['qty']>=1) : ?>
                 <a class="add_to_cart_button" href="config/updatecart.php?catId=<?php echo $catId; ?>&itemId=<?php echo $row['id']; ?>" role="button">
-                <i class="fa fa-plus-circle"></i></a>
+                ใส่ตระกร้า</a>
                 <?php endif; ?> 
                 <a class="add_to_cart_button" href="productdetail.php?catId=<?php echo $catId; ?>&itemId=<?php echo $row['id']; ?>" role="button">
                 รายละเอียดสินค้า</a>

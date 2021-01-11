@@ -10,17 +10,11 @@
     $row = mysqli_fetch_array($sql); 
     include '../config/head.php'
 ?>
-<div class="product-big-title-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+
                     <div class="product-bit-title text-center">
-                    <h2><marquee>ชำระเงิน</marquee></h2>
+                    <h2>ชำระเงิน</h2>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+               
     
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
@@ -39,8 +33,8 @@
 
                         <tr class = "  ">
                         <td>กรุงไทย</td>
-                        <td>ชื่อร้าน</td>
-                        <td>xxx-xxx-xxxx</td>
+                        <td>บริษัท ช้อปทูแฮนด์ จำกัด</td>
+                        <td>123-456-7890</td>
                         <td><img  height="80" width="80" src="https://tna.mcot.net/wp-content/uploads/2017/06/1497083701751.jpg" alt=""></td>
                         </tr>
                         </table>

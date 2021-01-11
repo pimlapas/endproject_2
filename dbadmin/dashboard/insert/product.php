@@ -74,6 +74,7 @@ if ($role!=1) {
           <div class="user-image mb-3 text-center">
             <div style="width: 100px; height: 100px; overflow: hidden; background: #cccccc; margin: 0 auto">
               <img src="..." class="figure-img img-fluid rounded" id="imgPlaceholder" alt="">
+              
             </div>
           </div>
 
@@ -81,10 +82,12 @@ if ($role!=1) {
             <input type="file" name="fileUpload" class="custom-file-input" id="chooseFile">
             <label class="custom-file-label" for="chooseFile">Select file</label>
           </div>
+          
 
       <button type="submit" name="submit" class="btn btn-info btn-block mt-4">
         เพิ่มสินค้า
       </button>
+      
     </form>
   </div>
 </div>

@@ -49,13 +49,13 @@
 <div class="card-body">
 <div class="table-responsive">
 
-<center><i class="material-icons">insert_drive_file</i></center><br>
+<center><img src="/thenewcart/assets/img/logo.png" width=30%></center><br>
 
  <table  table class="table">
   <tr>
-    <th class="text-primary">เลขที่ใบสั่งซื้อ</th>
-    <th class="text-primary">วันที่สั่งซื้อ</th>
-    <th class="text-primary">ชื่อลูกค้า</th>
+    <th class="">เลขที่ใบสั่งซื้อ</th>
+    <th class="">วันที่สั่งซื้อ</th>
+    <th class="">ชื่อลูกค้า</th>
     </tr> 
     <td><?php echo $rowcust["report_id"];?></td>
     <td><?php echo $rowcust["regdate"];?></td>
@@ -64,11 +64,11 @@
   </tr>
 </table>
 <table class="table table-bordered" id="padmin">
-                      <thead class=" text-primary">
-                        <th class="text-primary">รหัสสินค้า</th>
-                        <th class="text-primary">สินค้า</th>
-                        <th class="text-primary">จำนวน</th>
-                        <th class="text-primary">ราคา</th>
+                      <thead class=" ">
+                        <th class="">รหัสสินค้า</th>
+                        <th class="">สินค้า</th>
+                        <th class="">จำนวน</th>
+                        <th class="">ราคา</th>
                         </thead>
                       <tbody>
                       <?php 
@@ -96,7 +96,7 @@
 <td><p align = "right"><?php echo number_format( $qty).' ชิ้น'; ?></p></td>
 </tr>
 <tr class = ""><td colspan="3" align = 'right'><b><center>จำนวนเงินรวม</center></b></td>
-<td><p align = "right"><?php echo number_format( $total).' บาท.-'; ?></p></td>
+<td><p align = "right"><?php echo number_format( $total).' บาท.'; ?></p></td>
 </tr>
 </table>
 

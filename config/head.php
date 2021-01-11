@@ -79,7 +79,7 @@ $result2 = $conn->query($sql2);
                             <li><a href="/thenewcart/config/signin"><i class="fa fa-user"></i> Login</a></li>
                             <?php endif; ?>  
                             <?php if($role==1) : ?>
-                            <li><a class="nav-link" href="/thenewcart/dbadmin/dashboard">ตั้งค่าระบบ</a></li>
+                            <li><a class="nav-link" href="/thenewcart/dbadmin/dashboard">จัดการระบบ</a></li>
                             <?php endif; ?>  
                             <?php if(isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
                             <li><a href="/thenewcart/config/logout"><i class="fa fa-user"></i> Logout</a></li>
@@ -129,15 +129,11 @@ $result2 = $conn->query($sql2);
             <ul>
                 <li class="home"><a href="/thenewcart">หน้าแรก</a></li>
                 
-                <li class="category"><a>หมวดหมู่สินค้า</a>
-                    <ul>
-                        <li><a href="#">เสื้อผ้า</a></li>
-                        <li><a href="#">ไอที</a></li>
-                        
-                    </ul>
+                <li class="category"><a href="/thenewcart/carts/category">หมวดหมู่สินค้า</a>
+                    
                 </li>
 
-                <li class="create"><a href="/thenewcart/dbadmin/dashboard/view/product">ฝากขายสินค้า</a></li>
+                <li class="create"><a href="/thenewcart/carts/product">สินค้าทั้งหมด</a></li>
 
                 <li class="reg"><a>สมัครสมาชิก/เข้าสู่ระบบ</a>
                     <ul>
