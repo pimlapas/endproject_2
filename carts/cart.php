@@ -77,9 +77,9 @@
                         <th>รหัสสินค้า</th>
                         <th>ชื่อสินค้า</th>
                         <th>รายละเอียด</th>
-                        <th>จำนวน</th>
+                        <th>จำนวน (ชิ้น)</th>
                         <th>ราคาต่อหน่วย</th>
-                        <th>จำนวนเงิน</th>
+                        <th>จำนวนเงิน (บาท)</th>
                         <th>&nbsp;</th>
                         </tr>
                         </thead>
@@ -113,15 +113,19 @@
                         }
                         ?>
                         <tr>
-                        <td colspan="8" style="text-align: right;">
-                        <h4>ราคารวม <?php echo number_format($total_price,2); ?> บาท</h4>
+                        <td colspan="6" style="text-align: left;">
+                        <h4>ราคารวม <?php echo number_format($total_price,2); ?> บาท.-</h4>
                         </td>
-                        </tr>
+                        <td colspan="2" style="text-align: center;">
+                        <button type="submit" class="add_to_cart_button " style="line-height: 10px"> คำนวณราคาใหม่ <a class="fa fa-repeat"></a></button>
+                        </td>
+                       
+                        
                         <tr>
                         <td colspan="8" style="text-align: right;">
                         
                         <a href="category" type="button" class="add_to_cart_button ">เลือกสินค้า</a>
-                        <button type="submit" class="add_to_cart_button ">คำนวณราคาใหม่ <a class="fa fa-repeat"></a></button>
+                        
                         <a href="order" type="button" class="add_to_cart_button">สั่งซื้อสินค้า</a>
                         </td>
                         </tr>
@@ -159,7 +163,7 @@
                                 <tbody>
                                     <tr class="cart-subtotal">
                                         <th>ราคาสินค้ารวม</th>
-                                        <td><span class="amount"><?php echo number_format($total_price,2); ?></span></td>
+                                        <td><span class="amount"><?php echo number_format($total_price,2); ?> บาท.-</span></td>
                                     </tr>
 
                                     <tr class="shipping">
@@ -169,7 +173,7 @@
 
                                     <tr class="order-total">
                                         <th>รวมทั้งหมด</th>
-                                        <td><strong><span class="amount"><?php echo number_format($total_price,2); ?></span></strong> </td>
+                                        <td><strong><span class="amount"><?php echo number_format($total_price,2); ?> บาท.-</span></strong> </td>
                                     </tr>
                                 </tbody>
                             </table>

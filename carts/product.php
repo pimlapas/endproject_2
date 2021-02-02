@@ -32,7 +32,7 @@
                 <h4 class="card-title"><br><p style="color:black;">
                 <?php echo $row['product_name']; ?>
                 </h4></p>
-                <h5><span class="badge badge-secondary" style="background-color:yellow"><p style="color:black;">ราคา <?php echo number_format($row['product_price'],2); ?> บาท</p></span></h5>
+                <h5><span class="badge badge-secondary" style="background-color:yellow"><p style="color:black;">ราคา <?php echo number_format($row['product_price'],2); ?> บาท.-</p></span></h5>
                 <p class="card-text" style="color:black;"><b><u>รายละเอียดสินค้า</u></b> <br><?php echo mb_substr($row['product_desc'],0,75,'UTF-8'); ?></p>
                 <?php if($row['qty']<=0) : ?>
                 <p class="card-text"><span class="badge badge-secondary" style="background-color:red">สินค้าหมด</span></p>

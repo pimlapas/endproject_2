@@ -22,6 +22,8 @@ if ($role!=1) {
 ?>
 <!-- head -->
 
+
+
 <body class="dark-edition">
   <div class="wrapper ">
     <?php include '../config/nav.php'; ?>
@@ -94,7 +96,7 @@ if ($role!=1) {
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script>
     function readURL(input) {
-      if (input.files && input.files[0]) {
+      if (input.files && input.files[3]) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
@@ -103,6 +105,12 @@ if ($role!=1) {
 
         // base64 string conversion
         reader.readAsDataURL(input.files[0]);
+        reader.readAsDataURL(input.files[1]);
+        reader.readAsDataURL(input.files[2]);
+        reader.readAsDataURL(input.files[3]);
+
+
+
       }
     }
 

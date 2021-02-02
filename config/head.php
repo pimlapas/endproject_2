@@ -28,7 +28,9 @@ $result2 = $conn->query($sql2);
 	URL: https://www.freshdesignweb.com/ustora/
 -->
 <html lang="en">
+
   <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,7 +70,7 @@ $result2 = $conn->query($sql2);
   </head>
   
    
-    <div class="header-area">
+    <div class="bg-warning">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -90,8 +92,10 @@ $result2 = $conn->query($sql2);
             </div>
         </div>
     </div> <!-- End header area -->
-    <div class="site-branding-area" >
-        <div class="container" >
+    
+    <div class="bg-warning" >
+    
+        <div class="container " >
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
